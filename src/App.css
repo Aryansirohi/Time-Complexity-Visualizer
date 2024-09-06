@@ -1,38 +1,74 @@
+/* Apply a gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Cool gradient */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container styling */
 .App {
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 800px;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Button styling */
+button {
+  background-color: #5d9cec;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #4a7bbd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Chart container */
+.chart-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 80px;
+  font-size: 16px;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .App {
+    width: 90%;
   }
 }
